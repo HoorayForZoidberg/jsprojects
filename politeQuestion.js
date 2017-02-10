@@ -6,7 +6,7 @@ while(pass === false) {
     if(answer === "") {  
         console.log("I said add your question here, dammit!");
         answer = prompt("we're not leaving until you ask a question... punk!", "Hint: type a question here");
-    } else if ("fuck".match(answer)) {
+    } else if (answer.match("fuck")) {
         console.log("Hey! No profanity please.");
         answer = prompt("Please ask me a question", "Hint: don't be rude");
     } else if (answer.slice(-1) != "?") {
