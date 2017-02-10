@@ -17,11 +17,11 @@ while(pass === false) {
     }
 continue;
 }
-switch(answer) {
-  case "What is your name?":
+switch(answer.toLowerCase()) {
+  case "what is your name?":
     console.log("HAL");
     break;
-  case "What is your quest?":
+  case "what is your quest?":
     console.log("to seek the Holy Grail!");
     break;
   default:
