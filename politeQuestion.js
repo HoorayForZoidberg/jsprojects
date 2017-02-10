@@ -12,7 +12,6 @@ while(pass = false)
     } else if (answer.slice(-1) != "?") {
         console.log("Ok but that's not a question though.");
         answer = prompt("Please ask me a question", "Hint: with a question mark");
-        continue;
     } else {
         pass = true;
     }
