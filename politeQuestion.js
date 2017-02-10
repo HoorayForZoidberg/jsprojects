@@ -2,7 +2,7 @@
 
 var answer = prompt("Add your question here!");
 var pass = false
-while(pass = false)    
+while(pass === false) {   
     if(answer === "") {  
         console.log("I said add your question here, dammit!");
         answer = prompt("we're not leaving until you ask a question... punk!", "Hint: type a question here");
