@@ -19,15 +19,15 @@ if (annots) {
     rep.indent(20);
     for (var i=0; i < annots.length; i++) {
         if (theAuthor != annots[i].author) {
-        theAuthor = annots[i].author;
-        rep.writeText(" ");
-        rep.outdent(20);
-        rep.writeText(theAuthor);
-        rep.writeText("\n");
-        rep.indent(20);
+            theAuthor = annots[i].author;
+            rep.writeText(" ");
+            rep.outdent(20);
+            rep.writeText(theAuthor);
+            rep.writeText("\n");
+            rep.indent(20);
         }
-    rep.writeText(util.printf(msg, 1 + annots[i].page,annots[i].contents.replace(/(\r\n|\n|\r)/gm," ")));
-    rep.writeText("\n");
+        rep.writeText(util.printf(msg, 1 + annots[i].page,annots[i].contents.replace(/(\r\n|\n|\r)/gm," ")));
+        rep.writeText("\n");
     }
 } else {
     var msg = "No annotations found in this document, %s.";
