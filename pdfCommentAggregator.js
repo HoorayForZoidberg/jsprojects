@@ -11,8 +11,10 @@ if (annots) {
     rep.writeText(" ");
     rep.writeText("Number of Comments: " + annots.length);
     rep.writeText(" ");
+    rep.writeText("\n\n")
     var msg = "\200 page %s: \"%s\"";
     var theAuthor = annots[0].author;
+    rep.writeText("\n");
     rep.writeText(theAuthor);
     rep.indent(20);
     for (var i=0; i < annots.length; i++) {
@@ -21,6 +23,7 @@ if (annots) {
         rep.writeText(" ");
         rep.outdent(20);
         rep.writeText(theAuthor);
+        rep.writeText("\n");
         rep.indent(20);
         }
     rep.writeText(util.printf(msg, 1 + annots[i].page,annots[i].contents.replace(/(\r\n|\n|\r)/gm," ")));
