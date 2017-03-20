@@ -28,7 +28,7 @@ if (annots) {
         }
     rep.writeText(util.printf(msg, 1 + annots[i].page,annots[i].contents.replace(/(\r\n|\n|\r)/gm," ")));
     rep.writeText("\n");
-}
+    }
 } else {
     var msg = "No annotations found in this document, %s.";
     rep.writeText(util.printf(msg, this.documentFileName));
